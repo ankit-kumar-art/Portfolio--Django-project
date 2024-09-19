@@ -1,0 +1,40 @@
+{%extends 'basic.html'%}
+{% block title%} Ankit kumar {% endblock%}
+{% load static%}
+{% block body%}
+
+<section id="hero" class="hero section dark-background">
+  <img src="{% static 'assets/img/profile.jpg' %}" alt="Profile Picture" data-aos="fade-in" class="">
+
+  <div class="hero">
+    <div class="container" data-aos="fade-up" data-aos-delay="100%"
+      style="position: left; z-index: 2; text-align: left; display: flex; flex-direction: column; justify-content: flex-start;">
+
+      <h2 style="margin: 0; font-size: 50px; font-weight: 500; text-align: left;">
+        нєу! му ηαмє
+        <span style="color: #ec0c10;">𝒜𝓃𝓀𝒾𝓉 𝓀𝓊𝓂𝒶𝓇</span>
+        ⋆
+      </h2>
+      <p style="margin: 10px 0 0 0; font-size: 40px; text-align: left; color: hwb(0 93% 5%);">
+        I'm
+        <span class="typed" data-typed-items="Web Developer,Python developer,Full Stack Developer"
+          style="letter-spacing: 1px; border-bottom: 2px solid var(--accent-color); color: hsl(181, 100%, 57%);">
+          Designer
+        </span>
+        <span class="typed-cursor typed-cursor--blink" aria-hidden="true" style="color: #e9e4e3;"></span>
+      </p>
+
+    </div>
+  </div>
+
+
+</section><!-- /Hero Section -->
+{% for message in messages%}
+<div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+  <strong>
+    {{message}}
+  </strong>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="btn-close"></button>
+</div>
+{% endfor%}
+{%endblock body%}

@@ -1,0 +1,32 @@
+{%extends 'basic.html'%}
+{% block title%} Resume {% endblock%}
+{% block body%}
+{%load static%}
+<body>
+    <div style="text-align: right; margin-top: 0px;"></div>
+    <a href="{% static 'assets/img/resume.pdf' %}" data-aos="fade-right"download="Ankit_Kumar_Resume.pdf" class="download-button">Download Resume</a>
+    </body>
+    <style>
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: hsl(192, 100%, 50%);
+            border: none;
+            border-radius: 5px;
+            text-decoration: white;
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</body>
+
+
+<img src="{% static 'assets/img/resume.jpg' %}" alt="" class="img-fluid "data-aos="fade-up">
+{%endblock%}
