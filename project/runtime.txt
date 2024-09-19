@@ -1,2 +1,2 @@
-python-3.10.5
+python-3.9
 django-5.1.1
