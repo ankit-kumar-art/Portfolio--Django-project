@@ -1,5 +1,6 @@
 {%extends 'basic.html'%}
 {% block title%} Projects {% endblock%}
+{%load static%}
 {% block body%}
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
@@ -11,15 +12,17 @@
 
     <div class="row gy-4">
 
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
         <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
         <div>
-          <h4 class="title"><a href="service-details.html"style="margin-left: 5px;" class="stretched-link">Portfolio</a></h4>
+          <h4 class="title">Portfolio</h4>
+          <img src="{%static 'assets/img/portfolio.png' %}" width="60%"size="50%" data-aos="fade-up">
           <p class="description"> Explore my interactive portfolio built with django.</p>
           {%block maincss%}
-                <a href="/contact/" target="_blank" class="round-button">Demo</a>
-                <a href="/contact/" target="_blank" class="round-button">code</a>
-          {%endblock%}
+                <a href="https://portfolio-u77h.vercel.app/" target="_blank" class="round-button">Live Demo</a>
+                <a href="https://github.com/ankit-kumar-art/portfolio.git" target="_blank" class="round-button">Code</a>
+                
+          {%endblock maincss%}
           <br><br>
           <br><br>
           <br><br>
