@@ -227,3 +227,9 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+var typed = new Typed(".typing",{
+    strings:["Python Developer","Web Developer","Software Developer",],
+    typeSpeed:100,
+    BackSpedd:100,
+    loop:true
+})
